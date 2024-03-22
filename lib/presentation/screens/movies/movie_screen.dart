@@ -33,7 +33,10 @@ class MovieScreenState extends ConsumerState<MovieScreen> {
 
     if (movie == null) {
       return const Scaffold(
-          body: Center(child: CircularProgressIndicator(strokeWidth: 2)));
+        body: Center(
+          child: CircularProgressIndicator(strokeWidth: 2),
+        ),
+      );
     }
 
     return Scaffold(
@@ -42,9 +45,10 @@ class MovieScreenState extends ConsumerState<MovieScreen> {
         slivers: [
           _CustomSliverAppBar(movie: movie),
           SliverList(
-              delegate: SliverChildBuilderDelegate(
-                  (context, index) => _MovieDetails(movie: movie),
-                  childCount: 1))
+            delegate: SliverChildBuilderDelegate(
+                (context, index) => _MovieDetails(movie: movie),
+                childCount: 1),
+          ),
         ],
       ),
     );
