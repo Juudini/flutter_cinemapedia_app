@@ -1,6 +1,7 @@
 # Cinemapedia app
 
 ## Flutter + FlutterBloc + Riverpod + Providers
+![Ing Progress](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 <details open> 
   <summary><h2>🧩 Languages & Tools</h2></summary>
